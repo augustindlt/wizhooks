@@ -1,0 +1,8 @@
+src
+coverage
+babel.config.js
+.coveralls.yml
+.circleci
+tsconfig.json
+*.tgz
+img

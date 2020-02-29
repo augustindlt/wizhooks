@@ -1,8 +1,10 @@
-![Craftsman](img/wizhooks.png)
+![Wizhooks](img/wizhooks.png)
 
 # Wizhooks
 
+![Build Status](https://img.shields.io/circleci/build/github/augustindlt/wizhooks)
 [![Coverage Status](https://coveralls.io/repos/github/augustindlt/wizhooks/badge.svg?branch=master)](https://coveralls.io/github/augustindlt/wizhooks?branch=master)
+[![NPM Version](https://img.shields.io/npm/v/wizhooks)](https://www.npmjs.com/package/wizhooks)
 
 Wizhooks is a simple way to use the container-presenter pattern by composing hooks and higher-order components. The library is inspired by [recompose](https://github.com/acdlite/recompose).
 
@@ -14,7 +16,7 @@ yarn add wizhooks
 
 ```javascript
 import React, { useState, useEffect } from "react";
-import { withHooks } from "./lib";
+import { withHooks } from "wizhooks";
 
 const useMyHook = () => {
   const [message, setMessage] = useState("How are u ?");
@@ -56,7 +58,7 @@ export default Container(Presenter);
 
 ```javascript
 import React, { useState, useEffect } from "react";
-import { withHooks, compose } from "./lib";
+import { withHooks, compose } from "wizhooks";
 
 const withLoading = Component => props => {
   if (props.loading) {

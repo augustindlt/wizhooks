@@ -1,11 +1,11 @@
 {
   "name": "wizhooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wizhooks is a simple way to use the container-presenter pattern by composing hooks and hocs",
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "tsc -p . && npm pack",
     "test": "jest",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
@@ -18,6 +18,14 @@
   ],
   "author": "Augustin de Latrollière",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:augustindlt/wizhooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/augustindlt/wizhooks/issues"
+  },
+  "homepage": "https://github.com/augustindlt/wizhooks#readme",
   "peerDependencies": {
     "react": ">=16.0.0"
   },
