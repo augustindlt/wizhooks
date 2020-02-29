@@ -6,7 +6,8 @@
   "types": "lib",
   "scripts": {
     "build": "tsc -p .",
-    "test": "jest"
+    "test": "jest",
+    "test-coverage": "jest --collectCoverage=true"
   },
   "keywords": [
     "react",
