@@ -9,9 +9,11 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
+            - run: "echo repo_token: $COVERALLS_TOKEN > .coveralls.yml"
+            - run: cat .coveralls.yml
             - run: npm install
             - run: npm run build
-            - run: npm run test-coverage
+            - run: npm run coveralls
 workflows:
   build-and-test:
     jobs:
