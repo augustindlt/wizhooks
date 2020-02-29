@@ -1,0 +1,37 @@
+{
+  "name": "wizhooks",
+  "version": "1.0.0",
+  "description": "Wizhooks is a simple way to use the container-presenter pattern by composing hooks and hocs",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "higher-order",
+    "components",
+    "composition"
+  ],
+  "author": "Augustin de Latrollière",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@testing-library/react": "^9.4.1",
+    "@types/jest": "^25.1.3",
+    "@types/react": "^16.9.22",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "typescript": "^3.8.2"
+  },
+  "dependencies": {}
+}
