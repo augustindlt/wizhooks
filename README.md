@@ -54,6 +54,8 @@ const Presenter = ({ salutation, subject, message }) => (
 export default Container(Presenter);
 ```
 
+[View this example in CodeSandbox](https://codesandbox.io/s/zen-frog-g2te2?fontsize=14&module=%2Fsrc%2FWithHooks%2FWithHooks.container.js&theme=dark)
+
 ### You can also use `withHooks` with HOC by using `compose` :
 
 ```javascript
@@ -84,6 +86,8 @@ const Presenter = () => <>Hey Wizard !</>;
 
 export default container(Presenter);
 ```
+
+[View this example in CodeSandbox](https://codesandbox.io/s/zen-frog-g2te2?fontsize=14&hidenavigation=1&module=%2Fsrc%2FCompose%2FCompose.container.js&theme=dark)
 
 ## Documentation
 
