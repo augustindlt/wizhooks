@@ -27,21 +27,21 @@ const Container = withHooks(
   {
     hook: useState,
     params: ["hello"],
-    props: ([salutation, setSalutation]) => ({ salutation, setSalutation })
+    props: ([salutation, setSalutation]) => ({ salutation, setSalutation }),
   },
   {
     hook: useState,
     params: ["wizard"],
-    props: ([subject, setSubject]) => ({ subject, setSubject })
+    props: ([subject, setSubject]) => ({ subject, setSubject }),
   },
   {
     hook: useEffect,
     params: ({ salutation, subject }) => [
-      () => alert(`${salutation} ${subject}`)
-    ]
+      () => alert(`${salutation} ${subject}`),
+    ],
   },
   {
-    hook: useMyHook
+    hook: useMyHook,
   }
 );
 
@@ -62,14 +62,14 @@ export default Container(Presenter);
 import React, { useState, useEffect } from "react";
 import { withHooks, compose } from "wizhooks";
 
-const withLoading = Component => props => {
+const withLoading = (Component) => (props) => {
   if (props.loading) {
     return <>Loading ...</>;
   }
   return <Component {...props} />;
 };
 
-const useLoading = isLoading => {
+const useLoading = (isLoading) => {
   const [loading, setLoading] = useState(isLoading);
   useEffect(() => {
     setTimeout(() => setLoading(false), 1000);
@@ -133,3 +133,5 @@ Allows you to compose multiple higher-order components into a single one.
 ```js
 compose(...hocs: HigherOrderComponent[]): HigherOrderComponent;
 ```
+
+All props received by the compose component will be transmitted to the HigherOrderComponent
